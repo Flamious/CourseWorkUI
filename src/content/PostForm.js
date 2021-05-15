@@ -3,7 +3,7 @@ import { ArrowForwardIos, Close } from '@material-ui/icons';
 import React,{Component} from 'react';
 import AudioPlayer, { RHAP_UI } from 'react-h5-audio-player';
 
-var apiUrl = "https://localhost:44377/api/posts";
+var apiUrl = "https://localhost:5001/api/posts";
 var apiUrlFiles = apiUrl + "/files";
 export default class PostForm extends Component{
     constructor(props) {
@@ -275,7 +275,7 @@ export default class PostForm extends Component{
                     </div>
                     <CardMedia 
                     style={{width: 150}}
-                    image={this.state.imageFileName === null ? "https://localhost:44377/Default/default.jpg" : `https://localhost:44377/Images/${this.state.imageFileName}`}
+                    image={this.state.imageFileName === null ? "https://localhost:5001/Default/default.jpg" : `https://localhost:5001/Images/${this.state.imageFileName}`}
                     title={`${this.state.songName} by ${this.state.username}`}>
                     </CardMedia>
                 </Card>
@@ -283,7 +283,7 @@ export default class PostForm extends Component{
             <Box style={{position: 'fixed', zIndex: 1000, bottom: 0, left: 0, width: '100%'}}>
              <AudioPlayer
              autoPlay={false} 
-             src={`https://localhost:44377/Music/${this.state.songFileName}`}
+             src={`https://localhost:5001/Music/${this.state.songFileName}`}
              showJumpControls={false}
              hasDefaultKeyBindings={false}
              autoPlayAfterSrcChange={true}

@@ -6,7 +6,7 @@ import PostList from './post';
 import PostForm from './PostForm';
 import './Styles/homeStyles.css';
 
-const apiUrl = "https://localhost:44377/api/account/check";
+const apiUrl = "https://localhost:5001/api/account/check";
 export class Home extends Component{
     constructor(props) {
         super(props);

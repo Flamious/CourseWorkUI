@@ -16,7 +16,7 @@ import Grid from '@material-ui/core/Grid';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Paper from '@material-ui/core/Paper';
 import { Redirect } from "react-router";
-const apiUrl = "https://localhost:44377/api/account/login";
+const apiUrl = "https://localhost:5001/api/account/login";
 var User = { 
   username: "",
   token: ""

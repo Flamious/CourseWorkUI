@@ -17,7 +17,7 @@ import Grid from '@material-ui/core/Grid';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Container from '@material-ui/core/Container';
 
-const apiUrl = "https://localhost:44377/api/account/register";
+const apiUrl = "https://localhost:5001/api/account/register";
 class Registration extends Component {
   state = {
     username: "",

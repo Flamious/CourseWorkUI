@@ -10,7 +10,7 @@ import { styles } from "./Styles/postStyles";
 
 import Post from "./PostAddition/postCard";
 import { PhotoSizeSelectSmallOutlined } from '@material-ui/icons';
-const apiUrl = "https://localhost:44377/api/posts";
+const apiUrl = "https://localhost:5001/api/posts";
 
 class PostsList extends Component {
 
@@ -78,7 +78,7 @@ class PostsList extends Component {
             <Box className={classes.audio}>
              <AudioPlayer 
              autoPlay={true} 
-             src={`https://localhost:44377/Music/${this.state.currentSong.fileName}`}
+             src={`https://localhost:5001/Music/${this.state.currentSong.fileName}`}
              showJumpControls={false}
              hasDefaultKeyBindings={false}
              autoPlayAfterSrcChange={true}

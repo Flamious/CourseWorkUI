@@ -4,7 +4,7 @@ export const styles = theme => ({
         height: '100vh',
       },
       image: {
-        backgroundImage: `url(https://localhost:44377/Default/LoginScreen/image${imageNumber}.jpg)`,
+        backgroundImage: `url(https://localhost:5001/Default/LoginScreen/image${imageNumber}.jpg)`,
         backgroundRepeat: 'no-repeat',
         backgroundColor:
           theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900],

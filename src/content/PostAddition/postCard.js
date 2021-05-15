@@ -68,7 +68,7 @@ class Post extends Component {
                      </div>
                     <CardMedia 
                     className={classes.cardCover}
-                    image={this.state.imageName === "default.jpg" ? "https://localhost:44377/Default/default.jpg" : `https://localhost:44377/Images/${this.state.imageName}`}
+                    image={this.state.imageName === "default.jpg" ? "https://localhost:5001/Default/default.jpg" : `https://localhost:5001/Images/${this.state.imageName}`}
                     title={`${this.state.data.content} by ${this.state.data.user.userName}`}
                     onMouseEnter={this.onMouseEntered}
                     onMouseLeave={this.onMouseLeave}>

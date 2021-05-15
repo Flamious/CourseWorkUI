@@ -73,7 +73,7 @@ class CommenatariesList extends Component {
         super(props);
         this.state = { 
             commentaries: [], 
-            apiUrl: `https://localhost:44377/api/posts/${props.postId}/commentaries`, 
+            apiUrl: `https://localhost:5001/api/posts/${props.postId}/commentaries`, 
             token: props.token, 
             isLoading: true, 
             comm: "", 

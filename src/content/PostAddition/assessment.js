@@ -11,7 +11,7 @@ class Assessment extends Component{
             color: "textPrimary", 
             token: props.token, 
             userAssessment: "none", 
-            apiUrl: `https://localhost:44377/api/posts/${props.postId}/assess`,
+            apiUrl: `https://localhost:5001/api/posts/${props.postId}/assess`,
             isLoading: true};
 
         console.log(this.state.apiUrl);
